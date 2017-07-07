@@ -1,0 +1,103 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Meraki",
+		"_postman_id": "d0cce785-44b0-8389-9379-8551b6b19990",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pull Inventory",
+			"request": {
+				"url": "https://dashboard.meraki.com/api/v0/organizations/514416/inventory",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cisco-Meraki-API-Key",
+						"value": "9e9e94158e3e02e8a3fbb8e573a78e4031bcda1a",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Pull Traffic Stats",
+			"request": {
+				"url": {
+					"raw": "https://dashboard.meraki.com/api/v0/networks/L_632192797692141045/traffic?timespan=7200",
+					"protocol": "https",
+					"host": [
+						"dashboard",
+						"meraki",
+						"com"
+					],
+					"path": [
+						"api",
+						"v0",
+						"networks",
+						"L_632192797692141045",
+						"traffic"
+					],
+					"query": [
+						{
+							"key": "timespan",
+							"value": "7200",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cisco-Meraki-API-Key",
+						"value": "9e9e94158e3e02e8a3fbb8e573a78e4031bcda1a",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "MX Performance Score",
+			"request": {
+				"url": "https://dashboard.meraki.com/api/v0/networks/L_632192797692141045/devices/Q2KN-YH3U-DVZH/performance",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cisco-Meraki-API-Key",
+						"value": "9e9e94158e3e02e8a3fbb8e573a78e4031bcda1a",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Org ID",
+			"request": {
+				"url": "https://dashboard.meraki.com/api/v0/organizations/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cisco-Meraki-API-Key",
+						"value": "9e9e94158e3e02e8a3fbb8e573a78e4031bcda1a",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
